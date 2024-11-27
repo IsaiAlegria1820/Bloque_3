@@ -14,3 +14,12 @@ Salida esperada
 ...
 listo sir o lady
 */
+for (let i = 1; i <= 80; i++) {
+    valor=i%2;
+    if(valor==0){
+        console.log(i+" es par");
+    }else{
+        console.log(i+" es impar");
+    }
+}
+console.log("listo sir o lady");
