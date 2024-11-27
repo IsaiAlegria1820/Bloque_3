@@ -38,9 +38,6 @@ function jugar(){
         }
         else if(intento > numeroAleatorio){ 
             console.log("El numero es menor");
-        }
-        else if(intento > 600 || intento < 1){
-            console.log("El numero debe estar entre el 1 y el 600");
         }else{
             console.log("ingrese un numero");
         }
