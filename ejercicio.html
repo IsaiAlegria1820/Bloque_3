@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Calculadora</title>
+</head>
+<body>
+    <script>
+        let operador=prompt("Ingrese el operador");
+        let a=prompt("Ingrese el primer numero");
+        let b=prompt("Ingrese el segundo numero");
+         a=parseInt(a);
+         b=parseInt(b);
+        let resultado;
+        if(operador=="+"){
+            resultado=a+b;
+        }else if(operador=="-"){
+            resultado=a-b;
+        }else if(operador=="*"){
+            resultado=a*b;
+        }else if(operador=="/"){
+            resultado=a/b;
+        }
+        console.log("El resultado es "+resultado);
+    </script>
+</body>
+</html>

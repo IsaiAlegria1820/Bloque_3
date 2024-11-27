@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uso de Java Script</title>
+  </head>
+  <body>
+    <script>
+        let nombre= 1;
+        let apellido= 4;
+        let nombreCompleto=nombre+apellido;
+        console.log(nombreCompleto);
+
+        //entradas y salidas
+
+       // let edad= prompt("Ingrese su edad");
+       // let anoNacimiento= 2024-edad;
+       // console.log("Wow tu naciste en el año "+anoNacimiento+", deberias de apurarte, anciano");
+
+        //tipo de dato
+        let numero=10; //tipo number
+        let mes="Noviembre"; // tipo string
+        let booleano=true; //tipo boolean
+        let arreglo=["a","b","c"]; //tipo array
+        let objeto={a:"a",b:"b",c:"c"}; //tipo object
+        let nada; //tipo de dato any (se asigna su tipo de dato a lo largo del codigo)
+
+    
+        //ejercicio en clase
+        let nombre1="Ivan";
+        let apellido1="Perez";
+        let nombreCompleto1=nombre1+" "+apellido1;
+       // let edad= prompt("Ingrese su edad")
+        let edadCompleta=edad +" años"
+        let gusto= " los pambazos"
+
+        console.log("Hola mi nombre es "+nombreCompleto1+" y tengo  "+ edadCompleta +" y mes gusta "+ gusto);
+
+        //operadores
+        let a=583.23;
+        let b=33;
+        let suma=a+b;
+        let resta=a-b;
+        let multiplicacion=a*b;
+        let division=a/b;
+        let resto=a%b;
+        console.log("La suma de "+a+" y "+b+" es "+suma);
+        console.log("La resta de "+a+" y "+b+" es "+resta);
+        console.log("La multiplicacion de "+a+" y "+b+" es "+multiplicacion);
+        console.log("La division de "+a+" y "+b+" es "+division);
+        console.log("El resto de "+a+" y "+b+" es "+resto);
+
+        //comparadores
+        let mayor=a>b;
+        let menor=a<b;
+        let igual=a==b;
+        let diferente=a!=b;
+        console.log(mayor);
+        console.log(menor);
+        console.log(igual);
+        console.log(diferente);
+
+        if (a>b) {
+            console.log("a es mayor que b");
+        } else {
+            console.log("b es mayor que a");
+        }
+
+        let edad2= prompt("Ingrese su edad");
+        if (edad2>=18) {
+            console.log("Es mayor de edad");
+        } else {
+            console.log("Es menor de edad");
+        }
+
+
+        
+    </script>
+  </body>
+
+</html>
