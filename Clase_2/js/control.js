@@ -21,3 +21,16 @@ de otro modo si figura es diferente de trianquglo y cuadrado
 
 
 */
+
+let clima= prompt("Hace frio o calor");
+
+if(clima=="frio"){
+    console.log("Ponte un sueter mijo");
+}
+
+if(clima=="calor"){
+    console.log("Vamos a la playa");
+}else{
+    console.log("a chinga ¿pues que dije?");
+}
+    
