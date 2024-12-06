@@ -46,3 +46,4 @@ document.getElementById('taskForm').addEventListener("submit", function(event){
     event.target.reset();
 });
 
+//tarea crear una funcion que borre una tarea
