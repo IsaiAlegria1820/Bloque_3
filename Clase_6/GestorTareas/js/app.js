@@ -40,7 +40,7 @@ function renderTasks(){
 function deleteTask(id){
    for (let i = 0; i < tasks.length; i++) {
        if(tasks[i].id===id){
-           tasks.splice(i,1);
+           tasks.splice(i ,1);
            renderTasks();
        }
    } 
