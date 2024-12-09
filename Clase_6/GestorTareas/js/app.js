@@ -28,12 +28,22 @@ function renderTasks(){
                 <h5>${task.title}</h5>
                 <p class="mb-1">${task.description}</p>
             </div>
-        `;
+            <button class="btn btn-danger" onclick="deleteTask(${task.id})">Eliminar</button>
+            `;
 
         taskList.appendChild(listItem);
     });
 
     console.log(tasks);
+}
+//tarea crear una funcion que borre una tarea
+function deleteTask(id){
+   for (let i = 0; i < tasks.length; i++) {
+       if(tasks[i].id===id){
+           tasks.splice(i,1);
+           renderTasks();
+       }
+   } 
 }
 
 //manejo d-el formulario
@@ -46,4 +56,3 @@ document.getElementById('taskForm').addEventListener("submit", function(event){
     event.target.reset();
 });
 
-//tarea crear una funcion que borre una tarea
