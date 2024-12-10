@@ -1,14 +1,16 @@
 let librosLeidos=[];
-function agregarLibro(){
-    let libro = prompt("Ingrese el nombre del libro");
-    librosLeidos.push(libro);
+
+function agregarLibro(titulo){
+    titulo= document.getElementById('tituloLibro');
+    librosLeidos.push=titulo;
 }
 
 function mostrarLibrosLeidos(){
-   console.log(librosLeidos);
+   
 }
 
-for(i = 1 ; i <= 5; i++){
+document.getElementById('formLibreria').addEventListener("submit", function(event){
+    event.preventDefault();
     agregarLibro();
-}
-mostrarLibrosLeidos();
+    mostrarLibrosLeidos();
+});
